@@ -88,27 +88,27 @@
 
 | 문서종류 | 파일명 | 설명 |
 | :---:| :---: | :---: |
-| 화면설계 | [화면설계.pdf](https://github.com/yeonhee001/jeju-trip-02project/blob/main/work/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_B%ED%8C%80_01%EA%B8%B0%ED%9A%8D%2C%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84.pdf) | 주요 페이지의 화면 구성, 사용자 흐름 등 와이어프레임 기반 설계 자료 |
-| 디자인 | [디자인.pdf](https://github.com/yeonhee001/jeju-trip-02project/blob/main/work/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_B%ED%8C%80_02%EB%94%94%EC%9E%90%EC%9D%B8.pdf) | Figma로 작업한 디자인 시안. 색상, 폰트, UI 요소 등 자료 |
-| 발표자료 | [발표자료.pdf](https://github.com/yeonhee001/jeju-trip-02project/blob/main/work/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_B%ED%8C%80_%EB%96%A0%EB%82%98%EB%B4%85%EC%84%9C_%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf) | 팀 프로젝트 발표용 슬라이드 자료 |
+| 화면설계 | [화면설계.pdf](https://github.com/yeonhee001/schedule/blob/main/work/%EC%9D%BC%EC%A0%95%EA%B4%80%EB%A6%AC_%ED%94%8C%EB%9E%9C%EC%9E%87_01%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.pdf) | 주요 페이지의 화면 구성, 사용자 흐름 등 와이어프레임 기반 설계 자료 |
+| 디자인 | [디자인.pdf](https://github.com/yeonhee001/schedule/blob/main/work/%EC%9D%BC%EC%A0%95%EA%B4%80%EB%A6%AC_%ED%94%8C%EB%9E%9C%EC%9E%87_02%EB%94%94%EC%9E%90%EC%9D%B8.pdf) | Figma로 작업한 디자인 시안. 색상, 폰트, UI 요소 등 자료 |
+| 발표자료 | [발표자료.pdf](https://github.com/yeonhee001/schedule/blob/main/work/%EC%9D%BC%EC%A0%95%EA%B4%80%EB%A6%AC_%ED%94%8C%EB%9E%9C%EC%9E%87_03PPT.pdf) | 프로젝트 발표용 슬라이드 자료 |
 
 
-## 🌠 트러블슈팅 (Troubleshooting)
+## 💥 트러블슈팅
 
-> 개발 중 이슈와 해결 방안
-> 
-### ✅calendar_page.dart
+### 📌 calendar_page.dart
 
- - 일정을 등록한 후, 다른 날짜를 클릭했을 때 이전에 등록한 일정이 사라지고, 새로고침하면 나타나는 이슈 발생
+ 1. 일정을 등록한 후, 다른 날짜를 클릭했을 때 이전에 등록한 일정이 사라지고, 새로고침하면 나타나는 이슈 발생
 
-    ⇒ **원인**: 저장이 완료되기 전, 날짜가 이동되면서 저장되지 않은 상태의 데이터를 화면에 반영 <br>
+    *저장이 완료되기 전, 날짜가 이동되면서 저장되지 않은 상태의 데이터를 화면에 반영 <br>
+    
     ⇒ **해결방법**: 이를 해결하기 위해 saveSchedule 함수와 addSchedule 함수에서 저장이 완료될 때까지 대기한 후 일정 목록을 다시 불러오도록 async, await를 사용하여 처리
 
 
-### ✅list_page.dart
+### 📌 list_page.dart
 
-- 일정을 삭제한 후, 리스트를 확인해보면 내용은 없지만 해당 날짜는 그대로 남아있는 이슈 발생
+ 2. 일정을 삭제한 후, 리스트를 확인해보면 내용은 없지만 해당 날짜는 그대로 남아있는 이슈 발생
 
-    ⇒ **원인**: 값이 비어있는지만 확인하여 빈 문자열도 포함되어 있었음 <br>
+    *값이 비어있는지만 확인하여 빈 문자열도 포함되어 있었음 <br>
+    
     ⇒ **해결방법**: content가 비어있는 항목들은 리스트에서 제외되도록 수정
 
