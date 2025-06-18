@@ -1,4 +1,4 @@
-![Image](https://github.com/user-attachments/assets/a2262025-5003-4b62-8517-0f0afa0f34ad)
+![Image](https://github.com/user-attachments/assets/70cd1ff6-b9e7-4107-a7fe-84a4b641afae)
 
 ## 🖋 요약
 
