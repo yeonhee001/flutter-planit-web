@@ -92,6 +92,11 @@
 | 발표자료 | [발표자료.pdf](https://github.com/yeonhee001/schedule/blob/main/work/%EC%9D%BC%EC%A0%95%EA%B4%80%EB%A6%AC_%ED%94%8C%EB%9E%9C%EC%9E%87_03PPT.pdf) | 프로젝트 발표용 슬라이드 자료 |
 
 
+## 💾 프로젝트 저장소
+Flutter 전체 소스와 웹 소스 코드는 별도의 저장소로 분리되어있습니다.
+* [Flutter 전체 소스 저장소 바로가기](https://github.com/yeonhee001/flutter-planit-all.git)
+
+
 ## 💥 트러블슈팅
 
 ### 📌 calendar_page.dart
